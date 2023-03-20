@@ -1,15 +1,15 @@
-var sunjinUi ={};
+var dnUi ={};
 
 $(function(){
-    sunjinUi.tab();
-    sunjinUi.acco();
-    sunjinUi.scrollMove();
-    sunjinUi.modal();
-    sunjinUi.modalClose();
+    dnUi.tab();
+    dnUi.acco();
+    dnUi.scrollMove();
+    dnUi.modal();
+    dnUi.modalClose();
 })
 
 
-sunjinUi = {
+dnUi = {
     tab : function (){
         $(document).on('click', '.tab-btn',  function(e){
             e.preventDefault();
