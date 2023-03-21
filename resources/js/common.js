@@ -69,11 +69,8 @@ dnUi = {
             if (winW < 750) {
                 $('html').css('overflow-y', 'hidden')
             }
-            setTimeout(function(){
-                $('#'+modal).addClass('on');
-                $('.dim').addClass('on');
-
-            },100);
+            $('#'+modal).addClass('on');
+            $('.dim').addClass('on');
         })
     },
     modalClose : function(modal){
