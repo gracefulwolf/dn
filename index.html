@@ -265,7 +265,7 @@
 				</dl>
 			</div>
 		</div>
-		<div class="btn-wrap">
+		<div class="btn-wrap bottom">
 			<button type="button" class="btn color-02">DN솔루션즈 지원하기</button>
 		</div>
 	</div>
@@ -282,6 +282,7 @@
 		<div class="copyright">* 두산공작기계(주)는 ‘22년 6월 부로 사명을 (주)디엔솔루션즈로 변경하였으며, DN Automotive의 자회사입니다.</div>
 	</div>
 
+	<div class="fixed-btn"><a class="btn color-01 fixed">지원하기</a></div>
 
 
 	<div class="modal" id="modal01">
@@ -307,6 +308,19 @@
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 <script>
+	$(window).on('scroll load',function(e) {
+		var winScl = $(window).scrollTop();
+		var winHg = $(window).height();
+		var fixedBtn = $('.fixed-btn');
+		if (winScl > $('.visual-wrap .btn.color-01').offset().top + $('.visual-wrap .btn.color-01').height()) {
+			fixedBtn.addClass('on')
+			if (winScl + winHg > $('.btn-wrap.bottom').offset().top + 50) {
+				fixedBtn.removeClass('on')
+			}
+		}  else {
+			fixedBtn.removeClass('on')
+		}
+	});	
 	function shareKakao() {
 		// 사용할 앱의 JavaScript 키 설정
 		Kakao.init('564fb2bdba6a33d75e0c2c9139214962');
