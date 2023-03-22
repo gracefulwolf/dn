@@ -1,0 +1,295 @@
+
+	.flipper {
+	  color: #333;
+	  display: block;
+	  font-size: 20px !important;
+	  padding: 0;
+	  margin: 0;
+	  font-weight:700;
+	  height: 34px;
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform: translate(-48%, -50%);
+      width:100%;
+	  display: flex;
+	  flex-wrap:wrap;
+	  justify-content: center;
+
+	}
+	.flipper.flipper-invisible {
+	  font-size: 0px !important;
+	}
+	
+	.flipper-group {
+	  position: relative;
+	  white-space: nowrap;
+	  display: block;
+	  float: left;
+	  padding: 0;
+	  margin: 0;
+	}
+	.flipper-group label {
+	  position: relative;
+	  color: #fff;
+	  font-size: 15px;
+	  top: 100%;
+	  line-height: 1em;
+	  right: 0;
+      top:13px;
+	  -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+	  text-align: right;
+      padding:0 10px 0 3px;
+	}
+	
+	.flipper-digit {
+	  white-space: nowrap;
+	  position: relative;
+	  padding: 0;
+	  margin: 4px 2px;
+	  display: inline-block;
+      float: left;
+	  height: 34px;
+      width:24px;
+	  overflow-y: hidden;
+	}
+    .flipper-digit div{
+        
+        font-weight:bold;
+    }
+	
+	.flipper-delimiter {
+	  white-space: nowrap;
+	  display: block;
+	  float: left;
+	  padding: 0;
+	  margin: 0;
+	  color: #fff;
+	  min-width: .1em;
+	  white-space: nowrap;
+	  display: block;
+	  padding-top: 0.1em;
+	  padding-bottom: 0.1em;
+	  line-height: 1em;
+      display: none;
+	}
+	
+	.digit-face {
+	  display: block;
+	  visibility: hidden;
+	  position: relative;
+	  border-radius: 0.1em;
+	  top: 2px;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  z-index: 8;
+	  padding-top: 0.1em;
+	  padding-bottom: 0.1em;
+	  padding-left: 0.1em;
+	  padding-right: 0.1em;
+	  box-sizing: border-box;
+	  text-align: center;
+	}
+	
+	.digit-next {
+	  display: block;
+	  position: relative;
+	  border-radius: 0.1em;
+	  top: 2px;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  z-index: 8;
+	  height: 34px;
+	  background: #fff;
+	  padding-top: 0.1em;
+	  padding-bottom: 0.1em;
+	  padding-left: 0.1em;
+	  padding-right: 0.1em;
+	  box-sizing: border-box;
+	  text-align: center;
+	  -webkit-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+	          user-select: none;
+	}
+	
+	.digit-top {
+	  z-index: 10;
+	  top: 2px;
+	  left: 0;
+	  right: 0;
+	  height: 50%;
+	  -webkit-backface-visibility: hidden;
+	          backface-visibility: hidden;
+	  pointer-events: none;
+	  overflow: hidden;
+	  position: absolute;
+	  background: #fff;
+	  padding-top: 0.1em;
+	  padding-bottom: 0;
+	  padding-left: 0.1em;
+	  padding-right: 0.1em;
+	  border-top-left-radius: 0.1em;
+	  border-top-right-radius: 0.1em;
+	  box-sizing: border-box;
+	  text-align: center;
+	  -webkit-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+	          user-select: none;
+	  transition: background 0s linear, -webkit-transform 0s linear;
+	  transition: transform 0s linear, background 0s linear;
+	  transition: transform 0s linear, background 0s linear, -webkit-transform 0s linear;
+	  -webkit-transform-origin: 0 0.6em 0 !important;
+	          transform-origin: 0 0.6em 0 !important;
+	  -webkit-transform-style: preserve-3d !important;
+	          transform-style: preserve-3d !important;
+	  z-index: 20;
+	}
+	.digit-top.r {
+	  transition: background 0.2s linear, -webkit-transform 0.2s linear;
+	  transition: transform 0.2s linear, background 0.2s linear;
+	  transition: transform 0.2s linear, background 0.2s linear, -webkit-transform 0.2s linear;
+	  -webkit-transform: rotateX(90deg);
+	          transform: rotateX(90deg);
+	  background: #cccccc;
+	}
+	
+	.digit-top2 {
+	  visibility: hidden;
+	  position: absolute;
+	  height: 50%;
+	  left: 0;
+	  right: 0;
+	  background: #cccccc;
+	  transition: -webkit-transform 0.2s linear;
+	  transition: transform 0.2s linear;
+	  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+	  line-height: 0em !important;
+	  top: 50% !important;
+	  bottom: auto !important;
+	  padding-top: 0;
+	  padding-bottom: 0.1em;
+	  padding-left: 0.1em;
+	  padding-right: 0.1em;
+	  border-bottom-left-radius: 0.1em;
+	  border-bottom-right-radius: 0.1em;
+	  overflow: hidden;
+	  text-align: center;
+	  -webkit-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+	          user-select: none;
+	  transition: background 0s linear, -webkit-transform 0s linear;
+	  transition: transform 0s linear, background 0s linear;
+	  transition: transform 0s linear, background 0s linear, -webkit-transform 0s linear;
+	  -webkit-transform: rotateX(-90deg);
+	          transform: rotateX(-90deg);
+	  -webkit-transform-style: preserve-3d !important;
+	          transform-style: preserve-3d !important;
+	  -webkit-transform-origin: 0 0 0 !important;
+	          transform-origin: 0 0 0 !important;
+	  z-index: 20;
+	}
+	.digit-top2.r {
+	  visibility: visible;
+	  transition: background 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;
+	  transition: transform 0.2s linear 0.2s, background 0.2s linear 0.2s;
+	  transition: transform 0.2s linear 0.2s, background 0.2s linear 0.2s, -webkit-transform 0.2s linear 0.2s;
+	  -webkit-transform: rotateX(0deg);
+	          transform: rotateX(0deg);
+	  background: #fff;
+	}
+	
+	.digit-bottom {
+	  -webkit-backface-visibility: hidden;
+	          backface-visibility: hidden;
+	  pointer-events: none;
+	  position: absolute;
+	  overflow: hidden;
+	  background: #fff;
+	  height: 50%;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  z-index: 9;
+	  line-height: 0em;
+	  padding-top: 0;
+	  padding-bottom: 0.1em;
+	  padding-left: 0.1em;
+	  padding-right: 0.1em;
+	  border-bottom-left-radius: 0.1em;
+	  border-bottom-right-radius: 0.1em;
+	  box-sizing: border-box;
+	  text-align: center;
+	  transition: none;
+	}
+	.digit-bottom.r {
+	  transition: background 0.2s linear;
+	  background: #cccccc;
+	}
+	.flipper-digit:after {
+	  content: "";
+	  position: absolute;
+	  height: 2px;
+	  /* background: rgba(0, 0, 0, 0.5); */
+	  top: 50%;
+	  display: block;
+	  z-index: 30;
+	  left: 0;
+	  right: 0;
+	  display: none;
+	}
+	.flipper-dark {
+	  color: #fff;
+	}
+	.flipper-dark .flipper-delimiter {
+	  color: #333;
+	}
+	.flipper-dark .digit-next {
+	  background: #333;
+	}
+	.flipper-dark .digit-top {
+	  background: #333;
+	}
+	.flipper-dark .digit-top.r {
+	  background: black;
+	}
+	.flipper-dark .digit-top2 {
+	  background: black;
+	}
+	.flipper-dark .digit-top2.r {
+	  background: #333;
+	}
+	.flipper-dark .digit-bottom {
+	  background: #333;
+	}
+	
+	.flipper-dark-labels .flipper-group label {
+	  color: #333;
+	}
+
+
+.flipper-ss .flipper-digit > div{color:#1343f2;}
+
+
+@media screen and (max-width: 850px) {
+    .flipper{font-size:19px;}
+    .flipper-digit{width:23px;height:30px;}
+    .flipper-digit div{font-size:19px !important}
+    .flipper-group label{font-size:15px; top:9px}
+	
+}
+@media screen and (max-width: 600px) {
+    .flipper{font-size:17px;}
+    .flipper-digit{width:19px;height:26px;}
+    .flipper-digit div{font-size:17px !important}
+    .flipper-group label{font-size:11px;}
+}
+@media screen and (max-width: 340px) {
+	.flipper-delimiter{display:block;position: relative;top: 5px;}
+    .flipper-group label{position:absolute;bottom:-14px;left:50%;top:auto; font-size:11px;padding:0;text-align: center;}
+}
