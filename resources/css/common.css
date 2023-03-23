@@ -9,7 +9,7 @@
 .section04 {background: linear-gradient(#e5ebf4 50px, #fff, #fff, #ffffff);}
 .section04 .title{margin-top:0;padding-top:75px;}
 .btn{min-width: 240px;height: 64px;color:#afd700;font-size:24px;letter-spacing:-0.6px;font-weight:700; margin: 64px 337px 53px 0;border-radius: 32px;background-color: #13243d;box-sizing: border-box;padding:0 24px;}
-.btn.color-02{background:#9be100;color:#042441;width:300px;}
+.btn.color-02{background:#9be100;color:#042441;width:320px;}
 .btn-wrap{padding:100px 0 300px;margin:0 auto;width:900px;text-align: center;}
 .btn-wrap .btn{display:flex;align-items: center;justify-content: center; margin:0 auto;}
 

@@ -648,7 +648,7 @@
 					<div class="acco-cont">
 						<div class="acco-cont-item">
 							<div class="tit">대표적인 복리후생으로는 가족 의료비 지원(본인 및 배우자와 그 직계비속(요건 충족 시), 자녀)이 있으며 연 1,000만원 한도 내에서 지원이 가능합니다.<br>
- 또한 무주택 임직원을 위한 주택 보조금 지원, 자녀 학자금 지원, 경조사 지원(상조서비스 외), 휴양시설 등이 있습니다.</div>
+ 또한 무주택 임직원을 위한 주택 보조금 지원, 자녀 학자금 지원, 경조사 지원(상조 서비스 외), 휴양시설 등이 있습니다.</div>
 						</div>
 					</div>
 					<button type="button" class="acoo-btn"><span>신입사원은 언제 모집하나요?</span></button>
@@ -700,7 +700,7 @@
 			</div>
 		</div>
 		<div class="btn-wrap bottom">
-			<a href="https://career-dncompany.recruiter.co.kr/appsite/company/index" target="_blank" class="btn color-02">DN솔루션즈 지원하기</a>
+			<a href="https://career-dncompany.recruiter.co.kr/appsite/company/index" target="_blank" class="btn color-02">DN솔루션즈 지원하러 가기</a>
 		</div>
 	</div>
 
@@ -713,10 +713,10 @@
 		<div class="logo2">
 			<img src="./resources/images/logo2.png" alt="">
 		</div>
-		<div class="copyright">* 두산공작기계(주)는 ‘22년 6월 부로 사명을<br class="only-m"> (주)디엔솔루션즈로 변경하였으며, <br class="only-m">㈜디엔오토모티브의 자회사입니다.</div>
+		<div class="copyright">* 두산공작기계(주)는 ‘22년 6월 부로 사명을<br class="only-m"> (주)디엔솔루션즈로 변경하였으며, <br class="only-m">(주)디엔오토모티브의 자회사입니다.</div>
 	</div>
 
-	<div class="fixed-btn"><a href="https://career-dncompany.recruiter.co.kr/appsite/company/index" target="_blank" class="btn color-01 fixed">DN솔루션즈 지원하러가기</a></div>
+	<div class="fixed-btn"><a href="https://career-dncompany.recruiter.co.kr/appsite/company/index" target="_blank" class="btn color-01 fixed">DN솔루션즈 지원하러 가기</a></div>
 
 
 	<div class="modal" id="modal01">
@@ -782,10 +782,7 @@
 		
 	})
 
-	function shareFacebook() {
-		var sendUrl = "https://www.lgd-lgenius.com/"; // 전달할 URL
-		window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
-	}
+	
 
 	function clip(){
 	
@@ -799,11 +796,15 @@
 		document.body.removeChild(textarea);
 		alert("URL이 복사되었습니다.")
 	}		
+
+	function shareFacebook() {
+		var sendUrl = "https://www.lgd-lgenius.com/"; // 전달할 URL
+		window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
+	}
+
 	function shareKakao() {
 		// 사용할 앱의 JavaScript 키 설정
 		Kakao.init('564fb2bdba6a33d75e0c2c9139214962');
-		
-		
 		// 카카오링크 버튼 생성
 		Kakao.Link.createDefaultButton({
 		container: '#btnKakao', // 카카오공유버튼ID
