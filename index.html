@@ -727,7 +727,7 @@
 		<div class="modal-cont">
 			<div class="share-box">
 				<a href="javascript:shareFacebook();" class="btn facebook" id="btnFacebook"></a>
-				<a href="javascript:shareKakao();" class="btn kakao" id="btnKakao"></a>
+				<a href="#none" class="btn kakao" id="btnKakao"></a>
 				<a href="javascript:clip();" class="btn url" id="shareClip"></a>
 			</div>
 		</div>
@@ -740,9 +740,9 @@
 <script src="./resources/js/flipper.js"></script>
 <script src="./resources/js/common.js"></script>
 <script src="./resources/js/swiper-bundle.min.js"></script>
-<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 
-<script>
+<script type="text/javascript">
 	$(function(){
 		setTimeout(function() {
 			$('#myFlipper').flipper('init');	
@@ -779,11 +779,11 @@
 				})
 			}
 		})
-		
+		$(document).on('click', '#btnKakao', function(){
+			shareKakao()
+		})
+
 	})
-
-	
-
 	function clip(){
 	
 		var url = '';
@@ -798,27 +798,34 @@
 	}		
 
 	function shareFacebook() {
-		var sendUrl = "https://www.lgd-lgenius.com/"; // 전달할 URL
+		var sendUrl = "https://recruit-dncompany.com/"; // 전달할 URL
 		window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
 	}
 
+	Kakao.init('e60bf99c2c58418869cf451776f73681');
+	console.log('kako isInitialized :',Kakao.isInitialized());
+	
+	
+	//Kakao.isInitialized();
 	function shareKakao() {
-		// 사용할 앱의 JavaScript 키 설정
-		Kakao.init('564fb2bdba6a33d75e0c2c9139214962');
 		// 카카오링크 버튼 생성
-		Kakao.Link.createDefaultButton({
-		container: '#btnKakao', // 카카오공유버튼ID
-		objectType: 'feed',
-		content: {
-			title: "2022 학/석/박사 LGenius 산학장학생 선발", // 보여질 제목
-	      	description: "2022.09.05 (월) ~ 09.25 (일) 23:00", // 보여질 설명
-			imageUrl: "https://www.lgd-lgenius.com/", // 콘텐츠 URL
-			link: {
-				mobileWebUrl: "https://www.lgd-lgenius.com/",
-				webUrl: "https://www.lgd-lgenius.com/"
-			}
-		}
+		Kakao.Link.sendDefault ({
+			objectType: 'feed',
+			content: {
+				title: "2023년 상반기 DN솔루션즈 신입사원 공개채용", // 보여질 제목
+				description: "2023.03.27(월) ~04.10(월) 11:00", // 보여질 설명
+				imageUrl: "https://recruit-dncompany.com/", // 콘텐츠 URL
+				link: {
+					mobileWebUrl: "https://recruit-dncompany.com/",
+					webUrl: "https://recruit-dncompany.com/"
+				}
+			},
 		});
-	}	
+	}
+
+		
+	
+
+	
 </script>
 </html>
