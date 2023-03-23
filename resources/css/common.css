@@ -22,6 +22,42 @@
 .list.num > li:before{counter-increment: number;content: counter(number) ") ";background:none;position: relative;top:auto;left:auto;}
 .list.num > li .list{padding-left:20px;}
 
+.bg-ani{position: absolute;top: 35px;right: 70px;width: 524px;height: 670px;}
+.bg-ani .icon{position: absolute;}
+.bg-ani .icon.n1{top: 0;right: 0;width: 524px;height: 670px;background: url(../images/main/bg.png) 0 0 no-repeat;background-size: cover; animation: showUp 0.3s ease forwards;}
+.bg-ani .icon.n2{opacity:0; top: 40px;right: 274px;width: 71px;height: 37px;background: url(../images/main/icon1.png) 0 0 no-repeat;background-size: 100%; animation: cloud01 0.3s 0.3s ease forwards;}
+.bg-ani .icon.n3{opacity:0; top: 74px;right: 171px;width: 96px;height: 50px;background: url(../images/main/icon2.png) 0 0 no-repeat;background-size: 100%; animation: cloud02 0.3s  0.4s ease forwards;}
+.bg-ani .icon.n4{opacity:0; top: 130px;right: 55px;width: 88px;height: 61px;background: url(../images/main/icon3.png) 0 0 no-repeat;background-size: 100%; animation: airplane 0.3s  0.7s ease forwards;}
+.bg-ani .icon.n5{opacity:0; top: 442px;right: 395px;width: 23px;height: 55px;background: url(../images/main/icon4.png) 0 0 no-repeat;background-size: 100%; animation: person01 0.3s  0.7s ease forwards;}
+.bg-ani .icon.n6{opacity:0; top: 444px;right: 93px;width: 29px;height: 60px;background: url(../images/main/icon5.png) 0 0 no-repeat;background-size: 100%; animation: person02 0.3s  0.6s ease forwards;}
+.bg-ani .icon.n7{opacity:0; top: 465px;right: 208px;width: 136px;height: 96px;background: url(../images/main/icon6.png) 0 0 no-repeat;background-size: 100%; animation: fadeIn 0.3s  0.9s ease forwards;}
+@keyframes showUp {
+  0% {opacity: 0; transform: translateY(60px); }
+  100% {  opacity: 1; transform: translateY(0);}
+}
+@keyframes cloud01 {
+  0% {opacity: 0; transform: translateX(-30px); }
+  100% {  opacity: 1; transform: translate(0, 0);}
+}
+@keyframes cloud02 {
+  0% {opacity: 0; transform: translateX(20px); }
+  100% {  opacity: 1; transform: translate(0, 0);}
+}
+@keyframes person01 {
+  0% {opacity: 0; transform: translateX(-10px); }
+  100% {  opacity: 1; transform: translate(0, 0);}
+}
+@keyframes person02 {
+  0% {opacity: 0; transform: translate(20px, 20px); }
+  100% {  opacity: 1; transform: translate(0, 0);}
+}
+@keyframes airplane {
+  0% {opacity: 0; transform: translate(40px, -39px); }
+  100% {  opacity: 1; transform: translate(0, 0);}
+}
+
+
+
 .gnb-wrap{width:100%;height:55px;position:fixed;top:0;left:50%;transform: translateX(-50%);z-index: 100;}
 .gnb-wrap .logo{width:136px;height:24px;}
 .gnb-wrap .logo img{width:100%;}
@@ -195,6 +231,8 @@
 		opacity: 1;
 	}
 }
+
+
 
 
 @media screen and (max-width: 900px) {
