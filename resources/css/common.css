@@ -202,6 +202,7 @@
 	.only-m{display: block !important;}
 	.inner{width:100%;padding:0 2.4rem;}
 	.title{font-size: 2.2rem;line-height: 3.0rem;margin-top:6.0rem}
+	.title span{font-size: 2.2rem;line-height: 3.0rem;}
 	.section04 {background: linear-gradient(#e5ebf4 1px, #fff, #fff, #ffffff);}
 	.section04 .title{margin-top:0;padding-top:6.0rem;}
 	.gnb-wrap .menu-list{display:none;}
