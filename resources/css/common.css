@@ -6,7 +6,7 @@
 .bg{background: linear-gradient(#e5ebf4, #e5ebf4, #ffffff)}
 .bg.bg02{background: linear-gradient(#fff 100px, #e5ebf4)}
 .bg.bg03{background: linear-gradient(#fff 60%, #e5ebf4)}
-.section04{background: linear-gradient(#e5ebf4 20px, #ffffff)}
+.section04 {background: linear-gradient(#e5ebf4 50px, #fff, #fff, #ffffff);}
 .section04 .title{margin-top:0;padding-top:75px;}
 .btn{width: 240px;height: 64px;color:#afd700;font-size:24px;letter-spacing:-0.6px;font-weight:700; margin: 64px 337px 53px 0;border-radius: 32px;background-color: #13243d;box-sizing: border-box;}
 .btn.color-02{background:#9be100;color:#042441;width:300px;}
