@@ -174,7 +174,7 @@
 .modal .modal-header .btn-close{position: absolute;top: 24px;right: 20px;width: 25px;height: 25px;background: url(../images/btn_close.png) 50% 50% no-repeat;background-size: 100%;}
 .modal.on{display: block;z-index: 1001;transform: translate(-50%, -50%);}
 .share-box{display: flex;align-items: center;justify-content: center;margin-top:40px;}
-.share-box a{width:63px;height:63px;background: url(../images/icon_facebook.png) 0 0 no-repeat;background-size:100%;margin:0 10px;}
+.share-box a{width:63px;height:63px;background: url(../images/icon_facebook.png) 0 0 no-repeat;background-size:100%;margin:0 10px;min-width: auto;}
 .share-box a.facebook{background-image: url(../images/icon_facebook.png);}
 .share-box a.kakao{background-image: url(../images/icon_kakao.png);}
 .share-box a.url{background-image: url(../images/icon_url.png);}
