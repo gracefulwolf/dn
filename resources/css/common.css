@@ -183,7 +183,7 @@
 .dim{position:fixed;width:100%;height:100%;background: rgba(0,0,0,0.6);z-index: 1000;opacity:0;transition: 0.3s;}
 .dim.on{opacity: 1;}
 
-.fixed-btn{display:none; position: fixed;width:900px;height:64px;bottom:20px;left:50%;transform: translateX(-50%);}
+.fixed-btn{display:none; position: fixed;width:310px;height:64px;bottom:20px;left:50%;    transform: translateX(45%);}
 .fixed-btn.on{animation: fadeIn 0.3s ease forwards;display: block;}
 .fixed-btn .btn{position: absolute;right: 0;top: 0;margin: 0;display: flex;align-items: center;justify-content: center;}
 
