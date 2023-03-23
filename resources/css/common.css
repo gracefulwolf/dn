@@ -22,15 +22,15 @@
 .list.num > li:before{counter-increment: number;content: counter(number) ") ";background:none;position: relative;top:auto;left:auto;}
 .list.num > li .list{padding-left:20px;}
 
-.bg-ani{position: absolute;top: 35px;right: 70px;width: 524px;height: 670px;}
+.bg-ani{position: absolute;top: -80px;right: -60px;width: 524px;height: 670px;}
 .bg-ani .icon{position: absolute;}
 .bg-ani .icon.n1{top: 0;right: 0;width: 524px;height: 670px;background: url(../images/main/bg.png) 0 0 no-repeat;background-size: cover; animation: showUp 0.3s ease forwards;}
-.bg-ani .icon.n2{opacity:0; top: 40px;right: 274px;width: 71px;height: 37px;background: url(../images/main/icon1.png) 0 0 no-repeat;background-size: 100%; animation: cloud01 0.3s 0.3s ease forwards;}
-.bg-ani .icon.n3{opacity:0; top: 74px;right: 171px;width: 96px;height: 50px;background: url(../images/main/icon2.png) 0 0 no-repeat;background-size: 100%; animation: cloud02 0.3s  0.4s ease forwards;}
-.bg-ani .icon.n4{opacity:0; top: 130px;right: 55px;width: 88px;height: 61px;background: url(../images/main/icon3.png) 0 0 no-repeat;background-size: 100%; animation: airplane 0.3s  0.7s ease forwards;}
-.bg-ani .icon.n5{opacity:0; top: 442px;right: 395px;width: 23px;height: 55px;background: url(../images/main/icon4.png) 0 0 no-repeat;background-size: 100%; animation: person01 0.3s  0.7s ease forwards;}
-.bg-ani .icon.n6{opacity:0; top: 444px;right: 93px;width: 29px;height: 60px;background: url(../images/main/icon5.png) 0 0 no-repeat;background-size: 100%; animation: person02 0.3s  0.6s ease forwards;}
-.bg-ani .icon.n7{opacity:0; top: 465px;right: 208px;width: 136px;height: 96px;background: url(../images/main/icon6.png) 0 0 no-repeat;background-size: 100%; animation: fadeIn 0.3s  0.9s ease forwards;}
+.bg-ani .icon.n2{opacity:0; top: 40px;right: 274px;width: 71px;height: 37px;background: url(../images/main/icon1.png) 0 0 no-repeat;background-size: 100%; animation: cloud01 0.5s 0.5s ease forwards;}
+.bg-ani .icon.n3{opacity:0; top: 74px;right: 171px;width: 96px;height: 50px;background: url(../images/main/icon2.png) 0 0 no-repeat;background-size: 100%; animation: cloud02 0.5s  0.8s ease forwards;}
+.bg-ani .icon.n4{opacity:0; top: 130px;right: 55px;width: 88px;height: 61px;background: url(../images/main/icon3.png) 0 0 no-repeat;background-size: 100%; animation: airplane 0.7s  1.1s ease forwards;}
+.bg-ani .icon.n5{opacity:0; top: 442px;right: 395px;width: 23px;height: 55px;background: url(../images/main/icon4.png) 0 0 no-repeat;background-size: 100%; animation: person01 0.7s  1.6s ease forwards;}
+.bg-ani .icon.n6{opacity:0; top: 444px;right: 93px;width: 29px;height: 60px;background: url(../images/main/icon5.png) 0 0 no-repeat;background-size: 100%; animation: person02 0.7s  1.6s ease forwards;}
+.bg-ani .icon.n7{opacity:0; top: 465px;right: 208px;width: 136px;height: 96px;background: url(../images/main/icon6.png) 0 0 no-repeat;background-size: 100%; animation: fadeIn 0.7s  2.1s ease forwards;}
 @keyframes showUp {
   0% {opacity: 0; transform: translateY(60px); }
   100% {  opacity: 1; transform: translateY(0);}
@@ -69,6 +69,7 @@
 .gnb-wrap .menu-wrap .btn-share{display:block;width:32px;height:32px;background:url(../images/icon_share.png) 0 0 no-repeat;background-size:100%;margin-left:16px;}
 
 .visual-wrap {padding-top:155px;position: relative;}
+.visual-wrap .inner{position:relative}
 .visual-wrap .text-wrap .tit{color:#043e6f;}
 .visual-wrap .text-wrap .tit span{font-size:48px;line-height: 60px;letter-spacing: -1.2px;font-weight: 700;}
 .visual-wrap .text-wrap .tit em{ font-size:48px;line-height: 60px;letter-spacing: -1.2px;font-weight: 700; background:linear-gradient(180deg,rgba(255,255,255,0) 50%, rgba(175,215,0,0.8) 50%);}
@@ -331,13 +332,16 @@
 	.footer .logo2{width:15.5rem;height:3.0rem;margin-top:2.5rem}
 	.footer .copyright{font-size:1.2rem;line-height: 1.8rem}
 
-	.bg-ani{top: auto;bottom:0;right: 2.4rem;width: 25.1rem;height: 33.3rem;}
-	.bg-ani .icon.n1{top: auto;bottom:0;right: -1.0rem;width: 25.1rem;height: 33.3rem;animation: showUp 0.3s ease forwards;}
-	.bg-ani .icon.n2{opacity:0; top: 40px;right: 274px;width: 71px;height: 37px;animation: cloud01 0.3s 0.3s ease forwards;}
-	.bg-ani .icon.n3{opacity:0; top: 74px;right: 171px;width: 96px;height: 50px;animation: cloud02 0.3s  0.4s ease forwards;}
-	.bg-ani .icon.n4{opacity:0; top: 130px;right: 55px;width: 88px;height: 61px;animation: airplane 0.3s  0.7s ease forwards;}
-	.bg-ani .icon.n5{opacity:0; top: 442px;right: 395px;width: 23px;height: 55px;animation: person01 0.3s  0.7s ease forwards;}
-	.bg-ani .icon.n6{opacity:0; top: 444px;right: 93px;width: 29px;height: 60px; animation: person02 0.3s  0.6s ease forwards;}
-	.bg-ani .icon.n7{opacity:0; top: 465px;right: 208px;width: 136px;height: 96px; animation: fadeIn 0.3s  0.9s ease forwards;}
+	.bg-ani{top: auto;bottom:0;right: 0;width: 100%;height: 33.3rem;}
+	.bg-ani .icon.n1{top: auto;bottom:1rem;right: 1.5rem;width: 24.1rem;height: 33.3rem;}
+	.bg-ani .icon.n2{opacity:0; top: 9px;right: 164px;width: 41px;height: 27px;}
+	.bg-ani .icon.n3{opacity:0; top: 14px;right: 84px;width: 66px;height: 30px;}
+	.bg-ani .icon.n4{opacity:0; top: 45px;right: 14px;width: 52px;height: 41px;}
+	.bg-ani .icon.n5{display: none;}
+	.bg-ani .icon.n6{display: none;}
+	.bg-ani .icon.n7{opacity: 0;top: 133px;left:24px;right: auto;width: 126px;height: 91px; }
 }
 
+@media screen and (max-width: 350px) {
+	.bg-ani .icon.n7{display: none;}
+}
