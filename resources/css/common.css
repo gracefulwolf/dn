@@ -287,7 +287,7 @@
 	.btn-wrap{padding:0;width:100%;z-index: 100;}
 	.btn-wrap.bottom{padding:0;position: fixed;bottom:0;width:100%;}
 	.btn-wrap.bottom .btn{width:100%;border-radius: 0;height:5.9rem;font-size:2.0rem;color:#002443;letter-spacing: -0.5px;font-weight: 700;}
-	.fixed-btn{display:none;}
+	.fixed-btn{display:none !important;}
 	.footer{padding:5.2rem 5.2rem 15.3rem 5.2rem}
 	.footer .link-wrap .link-item{font-size:1.2rem;}
 	.footer .logo2{width:15.5rem;height:3.0rem;margin-top:2.5rem}
