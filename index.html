@@ -802,28 +802,26 @@
 		window.open("http://www.facebook.com/sharer/sharer.php?u=" + sendUrl);
 	}
 
-	Kakao.init('75ba6c497f0c8c8d74bdd7e481c35320');
-	console.log('kako isInitialized :',Kakao.isInitialized());
-	
-	
-	//Kakao.isInitialized();
 	function shareKakao() {
-		// 카카오링크 버튼 생성
-		Kakao.Share.sendDefault ({
-			objectType: 'feed',
-			content: {
-			title: "2023년 상반기 DN솔루션즈 신입사원 공개채용", // 보여질 제목
-			description: "2023.03.27 (월) ~ 04.10 (월) 11:00", // 보여질 설명
-			imageUrl: "https://recruit-dncompany.com/", // 콘텐츠 URL ex) https://recruit-dncompany.com/
-			link: {
-				mobileWebUrl: "https://recruit-dncompany.com/", //ex)https://recruit-dncompany.com/
-				webUrl: "https://recruit-dncompany.com/" // ex) https://recruit-dncompany.com/
+	// 사용할 앱의 JavaScript 키 설정
+	Kakao.init('75ba6c497f0c8c8d74bdd7e481c35320');
+
+
+	// 카카오링크 버튼 생성
+	Kakao.Link.sendDefault({
+	objectType: 'feed',
+	content: {
+	title: "2023년 상반기 DN솔루션즈 신입사원 공개채용", // 보여질 제목
+	description: "2023.03.27 (월) ~ 04.10 (월) 11:00", // 보여질 설명
+	imageUrl: "https://recruit-dncompany.com/", // 콘텐츠 URL ex) https://recruit-dncompany.com/
+	link: {
+		mobileWebUrl: "https://recruit-dncompany.com/", //ex)https://recruit-dncompany.com/
+		webUrl: "https://recruit-dncompany.com/" // ex) https://recruit-dncompany.com/
 				}
 			}
 		});
 	}
 
-		
 	
 
 	
