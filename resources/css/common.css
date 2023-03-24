@@ -164,7 +164,7 @@
 .table-wrap table tbody td{font-size:18px;font-weight: 700;color:#354152;border-bottom:1px solid #c7d0db;padding:12px 4px;;text-align: center;}
 .table-wrap table tbody tr:first-child td{border-top:0;}
 .table-wrap table tbody td.color02{font-size:18px;font-weight: 700;color:#6c7480;}
-.table-wrap p {font-size:14px;color:#6c7480}
+.table-wrap p {font-size:14px;color:#6c7480;margin-top:10px;}
 
 .faq.acco-wrap{margin-top:25px;}
 .faq.acco-wrap{position:relative;border:1px solid #c7d0db;border-lefT:0;border-right:0;}
