@@ -750,6 +750,7 @@
 <script src="./resources/js/flipper.js"></script>
 <script src="./resources/js/common.js"></script>
 <script src="./resources/js/swiper-bundle.min.js"></script>
+<script src="./resources/js/shake.js"></script>
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 <script type="text/javascript">
@@ -833,7 +834,19 @@
 	}
 
 	
+	var myShakeEvent = new Shake({
+		threshold: 15, // optional shake strength threshold
+		timeout: 1000 // optional, determines the frequency of event generation
+	});
+	window.addEventListener('shake', shakeEventDidOccur, false);
 
-	
+	//function to call when shake occurs
+	function shakeEventDidOccur () {
+
+		//put your own code here etc.
+		$('body').prepend('<div>1111</div>')
+	}
+
+
 </script>
 </html>
