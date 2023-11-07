@@ -39,7 +39,7 @@
 		<div class="visual-wrap">
 			<div class="inner">
 				<div class="text-wrap">
-					<div class="tit"><span>555 넘어, <br><em>Global Manufacturing<br>Solution Leader</em>로</span></div>
+					<div class="tit"><span>666 넘어, <br><em>Global Manufacturing<br>Solution Leader</em>로</span></div>
 					<div class="txt">2023년 상반기 신입사원 공개채용</div>
 				</div>
 			</div>
@@ -57,48 +57,6 @@
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 <script type="text/javascript">
-	$(function(){
-		setTimeout(function() {
-			$('#myFlipper').flipper('init');	
-		}, 500);
-		$(document).on('click','.menu-list a', function(e){
-			e.preventDefault();
-			$(this).siblings().removeClass('active')
-			$(this).addClass('active');
-			$('html,body').animate({scrollTop:$(this.hash).offset().top - 100}, 500);
-		})
-		$(window).on('load',function(e) {
-			var winScl = $(window).scrollTop();
-			var winHg = $(window).height();
-			var fixedBtn = $('.fixed-btn');
-			var gnbWarp = $('.gnb-wrap');
-			if (winScl >= 0) {
-				fixedBtn.addClass('on')
-				if (winScl + winHg > $('.btn-wrap.bottom').offset().top + 50) {
-					fixedBtn.removeClass('on')
-				}
-			}  else {
-				fixedBtn.removeClass('on')
-			}
-			if (winScl > 55) {
-			gnbWarp.css({
-					'background':'#fff',
-					'transition':'all 0s',
-					'box-shadow': '0 2px 10px 0 rgba(0, 0, 0, 0.08)'
-				})
-			}else {
-				gnbWarp.css({
-					'background':'transparent',
-					'box-shadow':'none',
-				})
-			}
-		})
-		$(document).on('click', '#btnKakao', function(){
-			shareKakao()
-		})
-
-	})
-
 	window.addEventListener('shake', shakeEventDidOccur, false);
 
 	//function to call when shake occurs
@@ -107,7 +65,6 @@
 		//put your own code here etc.
 		//$('body').prepend('<div>1111</div>')
 	}
-
 
 </script>
 </html>
