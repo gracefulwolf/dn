@@ -38,7 +38,7 @@
 		<div class="visual-wrap">
 			<div class="inner">
 				<div class="text-wrap">
-					<div class="tit"><span>888 넘어, <br><em>Global Manufacturing<br>Solution Leader</em>로</span></div>
+					<div class="tit"><span>777 넘어, <br><em>Global Manufacturing<br>Solution Leader</em>로</span></div>
 					<div class="txt">2023년 상반기 신입사원 공개채용</div>
 				</div>
 			</div>
@@ -50,17 +50,19 @@
 
 <script src="./resources/js/jquery.min.js"></script>
 <script src="shake.js"></script>
+<script src="test.ts"></script>
 
 <script type="text/javascript">
-	window.addEventListener('shake', shakeEventDidOccur, false);
+	
+	const shake = new Shake({threshold: 15, timeout: 1000});
 
-	//function to call when shake occurs
-	function shakeEventDidOccur () {
-		console.log(1111)
-		alert(12122)
-		//put your own code here etc.
-		//$('body').prepend('<div>1111</div>')
-	}
+shake.addEventListener('shake', ev => {
+	alert('shake',ev.detail.timeStamp, ev.detail.acceleration)
+  console.log('Shake!', ev.detail.timeStamp, ev.detail.acceleration);
+});
+
+// Then, in response to a user-initiated event:
+const approved = await shake.start();
 
 </script>
 </html>
